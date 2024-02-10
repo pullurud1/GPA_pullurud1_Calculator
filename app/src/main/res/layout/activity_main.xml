@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/labelMobileComputing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Computing"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextMobileComputing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelMobileComputing"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/labelHCI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMobileComputing"
+        android:text="Human Computer Interaction"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextHCI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelHCI"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/labelJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextHCI"
+        android:text="Java"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextJava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelJava"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/labelDataMining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextJava"
+        android:text="Data Mining"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextDataMining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelDataMining"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/labelCompNetworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDataMining"
+        android:text="Computer Networks"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextCompNetworks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelCompNetworks"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/buttonComputeGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextCompNetworks"
+        android:layout_marginTop="24dp"
+        android:text="Compute GPA" />
+
+    <TextView
+        android:id="@+id/textViewGPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonComputeGPA"
+        android:layout_marginTop="21dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="GPA Display"
+        android:textSize="24sp" />
+
+</RelativeLayout>
+</ScrollView>
